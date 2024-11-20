@@ -10,7 +10,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['158.160.12.176', 'jktutask.ddns.net']
 
-
 # Application definition
 
 INSTALLED_APPS = [
