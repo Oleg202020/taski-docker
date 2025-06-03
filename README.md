@@ -1,9 +1,10 @@
 # 📝 Taski программа для планирования задач, развёрнутая на сервере с CI/CD
 
-|------------|----------------------------|
-| **Stack**  | Django 3.2 · DRF 3.12 · PostgreSQL 13 |
-| **DevOps** | Docker / Docker Compose · Nginx · Gunicorn |
-| **CI/CD**  | GitHub Actions &rarr; Docker Hub &rarr; Prod-server |
+
+
+* **Stack** :  Django 3.2 · DRF 3.12 · PostgreSQL 13 
+* **DevOps**:  Docker / Docker Compose · Nginx · Gunicorn 
+* **CI/CD** :  GitHub Actions &rarr; Docker Hub &rarr; Prod-server 
 
 ## Содержание
 1. [Быстрый старт](#быстрый-старт)
