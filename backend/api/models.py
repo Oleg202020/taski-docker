@@ -1,13 +1,19 @@
-"""модель."""
+"""Модели приложения API."""
+
 from django.db import models
 
 
 class Task(models.Model):
-    """модель задачи."""
+    """Модель для фиксации задачи и статуса."""
 
-    title = models.CharField(verbose_name='Заголовок', max_length=120)
-    description = models.TextField()
-    completed = models.BooleanField(default=False)
+    title = models.CharField('Заголовок', max_length=120)
+    description = models.TextField('Описание')
+    completed = models.BooleanField('Выполнена', default=False)
 
-    def _str_(self):
+    class Meta:
+        ordering = ("-id",)
+        verbose_name = "Задача"
+        verbose_name_plural = "Задачи"
+
+    def _str_(self) -> str:
         return self.title

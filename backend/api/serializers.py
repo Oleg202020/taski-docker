@@ -1,14 +1,13 @@
-"""сериализатор."""
+"""Сериализаторы DRF."""
+
 from rest_framework import serializers
 
 from .models import Task
 
 
 class TaskSerializer(serializers.ModelSerializer):
-    """сериализатор."""
+    """Сериализатор модели Task для всех CRUD-операций."""
 
     class Meta:
-        """мета."""
-
         model = Task
         fields = ('id', 'title', 'description', 'completed')
